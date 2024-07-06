@@ -1,0 +1,120 @@
+@import './base.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+:root {
+    --form-background-color: rgba(215, 220, 215, 1); 
+    --form-text-color: #000000;
+    --dropdownmenua-background-color1: white;
+    --dropdownmenu-background-color2: #5BA55D;  
+}
+body {
+    background-color: rgb(240, 247, 242);
+    background-color: var(--body-background-color);
+    margin:5px;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.imghover:hover {
+    transform: scale(1.5);
+    box-shadow: none;
+    z-index: 1;
+}
+.imgborder {
+    border: 15px solid white;
+    border-radius: 25px;
+    filter: brightness(var(--image-dark-brightness));
+}
+main {
+    background-color: #1C361D;
+    border-radius: 25px;
+    margin:0 auto;
+    min-height: auto;
+    padding : 60px 15px 75px;
+    box-sizing: border-box;
+    width:100%;
+}
+a {
+    text-decoration: none;
+}
+p {
+    font-family: 'Francois One', sans-serif;
+    font-size: 24px;
+    color:rgba(215, 220, 215, 1);
+    padding:15px;
+    filter: brightness(var(--image-dark-brightness));
+}
+.bouton:hover {
+    background-color: #85be87;
+}
+h1 {
+    font-family: 'Francois One', sans-serif;
+    color: #5BA55D;
+    font-size: 65px;
+    text-align: center;
+    padding-bottom: 40px;
+    text-shadow: 2px 2px #011202;
+    filter: brightness(var(--image-dark-brightness));
+}
+h2 {
+    padding:20px;
+    font-family: 'Francois One', sans-serif;
+    font-weight: bold;
+    color: rgba(215, 220, 215, 1);
+    text-align: center;
+    text-shadow: 2px 2px #011202;
+    filter: brightness(var(--image-dark-brightness));
+}
+h3 {
+    font-family: 'Francois One', sans-serif;
+    font-size: 24px;
+    color: rgba(215, 220, 215, 1) ;
+    margin-top: 35px;
+    background-color: #5BA55D;
+    display: inline-block;
+    padding: 17px 30px;
+    border-radius: 25px;  
+    box-shadow: 2px 2px #011202;
+    filter: brightness(var(--image-dark-brightness));
+}
+ul {
+    font-family: 'Francois One', sans-serif;
+    color: rgba(215, 220, 215, 1);
+    font-size: 24px;
+    list-style-position: inside;
+    filter: brightness(var(--image-dark-brightness));
+  }
+  .devise {
+    font-family: 'Kaushan Script', sans-serif;
+    font-size: 40px;
+    color: rgb(91, 165, 93); 
+    text-shadow: 2px 2px #011202;
+  }
+.dark-mode {
+    --footer-background-color: #434E42;
+    --header-background-color: #434E42;
+    --body-background-color: #434E42;
+    --image-dark-brightness: 0.7;
+    --form-background-color: #0C140C;
+    --form-text-color: rgba(215, 220, 215, 1);
+    --dropdownmenua-background-color1: #434E42;
+    --dropdownmenu-background-color2:#1C361D; 
+}
+@media only screen and (max-width:932px ) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding : 30px 0 75px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+
+
+}
