@@ -15,7 +15,7 @@ import TarifsRightComponent from '../components/TarifsRightComponent.vue';
 import TarifsListeComponent from '@/components/TarifsListeComponent.vue';
 
 export default {
-  name: 'Tarifs',
+  name: 'TarifsView',
   components: {
     TarifsLeftComponent,
     TarifsRightComponent,

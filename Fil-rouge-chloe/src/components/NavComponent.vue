@@ -1,3 +1,4 @@
+<!--Navbar pour desktop et dropdown pour version mobile-->
 <template>
   <nav :class="navClass">
     <router-link
@@ -5,13 +6,12 @@
       :key="link.href"
       :to="link.href"
       class="nav-link"
-      @click.native="closeDropdown"
+      @click="closeDropdown"
     >
       <h2 class="nav-link-text">{{ link.text }}</h2>
     </router-link>
   </nav>
 </template>
-
 <script>
 export default {
   name: 'NavComponent',

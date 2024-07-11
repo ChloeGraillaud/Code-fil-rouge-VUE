@@ -12,7 +12,7 @@ import GaleriePaysagesComponent from '@/components/GaleriePaysagesComponent.vue'
 
 
   export default {
-    name: 'Galerie',
+    name: 'GalerieView',
     components: {
       GaleriePortraitsComponent,
       GaleriePaysagesComponent

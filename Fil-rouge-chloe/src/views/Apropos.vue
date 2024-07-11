@@ -12,7 +12,7 @@ import AproposMapComponent from '@/components/AproposMapComponent.vue'
 
 
   export default {
-    name: 'Apropos',
+    name: 'AproposView',
     components: {
       AproposTopComponent,
       AproposMapComponent,

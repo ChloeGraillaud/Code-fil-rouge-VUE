@@ -14,7 +14,7 @@ import HomeText from '../components/HomeText.vue';
 import HomeCarousel from '../components/HomeCarousel.vue'
 
 export default {
-  name: 'Home',
+  name: 'HomeView',
   components: {
     HomeText,
     HomePhotos,

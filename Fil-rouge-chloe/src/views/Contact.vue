@@ -9,7 +9,7 @@
 import ContactComponent from '@/components/ContactComponent.vue'
 
   export default {
-    name: 'Contact',
+    name: 'ContactView',
     components: {
       ContactComponent,
     }

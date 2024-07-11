@@ -1,16 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../views/Home.vue';
-import Tarifs from '../views/Tarifs.vue';
-import Apropos from '../views/Apropos.vue';
-import Galerie from '../views/Galerie.vue';
-import Contact from '../views/Contact.vue';
+import HomeView from '../views/Home.vue';
+import TarifsView from '../views/Tarifs.vue';
+import AproposView from '../views/Apropos.vue';
+import GalerieView from '../views/Galerie.vue';
+import ContactView from '../views/Contact.vue';
 
 const routes = [
-  { path: '/', component: Home },
-  { path: '/tarifs', component: Tarifs },
-  { path: '/apropos', component: Apropos },
-  { path: '/galerie', component: Galerie },
-  { path: '/contact', component: Contact }
+  { path: '/', component: HomeView },
+  { path: '/tarifs', component: TarifsView },
+  { path: '/apropos', component: AproposView },
+  { path: '/galerie', component: GalerieView },
+  { path: '/contact', component: ContactView }
 ];
 
 const router = createRouter({

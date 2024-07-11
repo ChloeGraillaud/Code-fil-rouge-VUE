@@ -1,3 +1,4 @@
+<!--Carousel de témoignages, les témoignages sont stockés dans le fichier data.json-->
 <template>
   <div>
     <div class="container d-flex text-center testimonial-title">
@@ -36,7 +37,7 @@ export default {
     this.loadTestimonials();
     window.addEventListener('resize', this.groupTestimonials);
   },
-  beforeDestroy() {
+  beforeUnmount() {
     window.removeEventListener('resize', this.groupTestimonials);
   },
   methods: {
