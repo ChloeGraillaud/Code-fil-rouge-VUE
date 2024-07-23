@@ -10,7 +10,7 @@
   
   <script>
   export default {
-    name: 'Artistelogo'
+    name: 'ArtisteLogo'
   }
   </script>
   

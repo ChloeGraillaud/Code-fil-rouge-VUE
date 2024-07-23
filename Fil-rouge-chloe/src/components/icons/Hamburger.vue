@@ -10,7 +10,7 @@
   
   <script>
   export default {
-    name: 'Hamburger'
+    name: 'HamburgerLogo'
   }
   </script>
   

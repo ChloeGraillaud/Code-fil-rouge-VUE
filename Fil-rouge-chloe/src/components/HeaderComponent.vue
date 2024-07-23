@@ -3,14 +3,14 @@
     <CameraLogo />
     <div class="dropdown">
       <button class="dropmenuimg" @click="toggleDropdown">
-        <Hamburger />
+        <HamburgerLogo />
       </button>
       <div v-if="isDropdownOpen" id="mydropdown" class="dropdownmenu">
         <NavComponent :links="links" navClass="mobile-nav" />
       </div>
     </div>
     <router-link to="/">
-      <Artistelogo />
+      <ArtisteLogo />
     </router-link>
     <NavComponent :links="links" navClass="desktop-nav" />
   </header>
@@ -18,16 +18,16 @@
 
 <script>
 import CameraLogo from './icons/CameraLogo.vue';
-import Hamburger from './icons/Hamburger.vue';
-import Artistelogo from './icons/Artistelogo.vue';
+import HamburgerLogo from './icons/Hamburger.vue';
+import ArtisteLogo from './icons/Artistelogo.vue';
 import NavComponent from './NavComponent.vue';
 
 export default {
   name: 'HeaderComponent',
   components: {
     CameraLogo,
-    Hamburger,
-    Artistelogo,
+    HamburgerLogo,
+    ArtisteLogo,
     NavComponent
   },
   data() {
