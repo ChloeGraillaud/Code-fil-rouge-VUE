@@ -7,12 +7,16 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "generate-sitemap": "node generate-sitemap.mjs",
+    "build-with-sitemap": "npm run build && npm run generate-sitemap"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
+    "sitemap": "^8.0.0",
+    "sitemap-generator": "^8.5.1",
     "vite-plugin-dynamic-import": "^1.5.0",
     "vue": "^3.4.29",
     "vue-router": "^4.4.0"
