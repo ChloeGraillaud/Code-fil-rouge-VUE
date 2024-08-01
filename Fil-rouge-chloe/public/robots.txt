@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://code-fil-rouge-vue.vercel.app/sitemap.xml
