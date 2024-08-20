@@ -9,9 +9,7 @@
   ],
   "routes": [
     { "handle": "filesystem" },
-    {
-      "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
-    }
+    { "src": "/(.*)", "dest": "/index.html" }
   ],
   "buildCommand": "npm run build-with-sitemap"
   
