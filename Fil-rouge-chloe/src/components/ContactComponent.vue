@@ -1,35 +1,74 @@
 <template>
-    <div class="contactform">
-      <form method="get" action="traitement.php">
-        <div class="formgrouprow">
-          <div class="formgroup">
-            <label for="nom">Nom</label>
-            <br>
-            <input type="text" id="nom" name="nom" required>
-          </div>
-          <div class="formgroup">
-            <label for="email">Email</label>
-            <br>
-            <input type="email" id="email" name="email" required>
-          </div>
+  <div class="contactform">
+    <form v-if="!isSubmitted && !isLoading" id="contact-form" @submit.prevent="sendEmail">
+      <div class="formgrouprow">
+        <div class="formgroup">
+          <label for="nom">Nom</label>
+          <br />
+          <input type="text" id="nom" name="nom" required />
         </div>
         <div class="formgroup">
-          <label for="message">Message</label>
-          <br>
-          <textarea name="message" id="message" rows="5" required></textarea>
+          <label for="email">Email</label>
+          <br />
+          <input type="email" id="email" name="email" required />
         </div>
-        <center>
-          <input type="submit" class="buttonform bouton" value="Envoyer">
-        </center>
-      </form>
+      </div>
+      <div class="formgroup">
+        <label for="message">Message</label>
+        <br />
+        <textarea name="message" id="message" rows="5" required></textarea>
+      </div>
+
+      <center>
+        <input type="submit" class="buttonform bouton" value="Envoyer" :disabled="isLoading" />
+      </center>
+    </form>
+
+    
+    <div v-if="isLoading" class="spinner-border text-success" role="status">
+      <span class="visually-hidden">Envoi en cours...</span>
     </div>
-  </template>
+
+    
+    <div v-else-if="isSubmitted">
+      <h2>Merci pour votre commentaire !</h2>
+    </div>
+  </div>
+</template>
   
-  <script>
-  export default {
-    name: 'ContactComponent',
-  };
-  </script>
+<script>
+import emailjs from 'emailjs-com';
+
+export default {
+  data() {
+    return {
+      isSubmitted: false,
+      isLoading: false,
+    };
+  },
+  methods: {
+    sendEmail() {
+      this.isLoading = true;
+      const form = document.getElementById('contact-form');
+
+      emailjs.sendForm('service_a9jm7uh', 'template_ru317cl', form, 'Xr1CR-irF8-QLAcTO')
+        .then((response) => {
+          console.log('Success:', response);
+          this.isSubmitted = true;
+          this.isLoading = false;
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+          alert('Erreur lors de l\'envoi de l\'email : ' + JSON.stringify(error));
+          this.isLoading = false;
+        });
+    },
+  },
+};
+</script>
+
+
+
   
   <style scoped>
   .contactform {
