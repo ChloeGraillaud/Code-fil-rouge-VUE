@@ -15,12 +15,5 @@ export default defineConfig({
       '~bootstrap': 'bootstrap',
     },
   },
-  build: {
-    rollupOptions: {
-      // Si vous avez des dépendances externes, configurez-les ici
-      external: ['emailjs-com'], // Ajoutez d'autres dépendances si nécessaire
-    },
-    outDir: 'dist', // Assurez-vous que la sortie est correctement configurée
-  },
 })
 
