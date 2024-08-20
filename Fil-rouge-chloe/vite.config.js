@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue'
 import dynamicImport from 'vite-plugin-dynamic-import'
 
 export default defineConfig({
-  base: './',
+  base: '/',
   plugins: [
     vue(),
     dynamicImport(),
