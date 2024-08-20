@@ -15,10 +15,5 @@ export default defineConfig({
       '~bootstrap': 'bootstrap',
     },
   },
-  build: {
-    rollupOptions: {
-      external: ['emailjs-com'],
-    },
-  },
 })
 
