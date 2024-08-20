@@ -31,7 +31,7 @@
 
     
     <div v-else-if="isSubmitted">
-      <h2>Merci pour votre commentaire !</h2>
+      <h2>Merci pour votre message ! <br> Je prendrai contact avec vous sous peu.</h2>
     </div>
   </div>
 </template>
