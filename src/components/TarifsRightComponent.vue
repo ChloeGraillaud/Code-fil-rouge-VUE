@@ -15,7 +15,7 @@
         height="214"
       >
       <h2>Photo nature</h2>
-      <p>De 60 à 100 € la séance d’une heure, possibilité de forfait pour une longue durée.<br>
+      <p>De 100 à 200+ € la séance d’une heure, possibilité de forfait pour une longue durée.<br>
       Me contactez pour plus de détails</p>
     </div>
   </template>

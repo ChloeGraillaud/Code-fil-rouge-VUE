@@ -23,10 +23,10 @@
       >  
       <h2>Portrait humain et animal</h2>
       <ul>
-        <li>Couleur : 50 €</li>
-        <li>Noir et blanc : 45 €</li>
-        <li>Effet personnalisé : à partir de 50 €</li>
-        <li>Groupes : 50 € + 35 € par personne supplémentaire</li>
+        <li>Couleur : 120 €/ 150 €</li>
+        <li>Noir et blanc : 100 €/ 130 €</li>
+        <li>Effet personnalisé : à partir de + 50 €</li>
+        <li>Groupes : + 50 €</li>
       </ul>
       <p>Possibilités de forfait dans le cas de groupe de plus de 5 participants</p>
     </div>

@@ -82,13 +82,13 @@
   }
 
   .social a {
-    margin: 0 5px; /* Réduisez les marges pour les écrans plus petits */
+    margin: 0 5px;
   }
 
   .darkmode-icon {
     width: 100px; 
     height: auto;
-    margin-left: 0; /* Ajustez la marge pour l'icône de mode sombre */
+    margin-left: 0;
   }
         
   }
