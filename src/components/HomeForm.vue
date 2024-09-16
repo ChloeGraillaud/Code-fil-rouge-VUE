@@ -35,6 +35,7 @@ export default {
   .contactform {
     transform: scale(1.5);
     display: flex;
+    filter: brightness(var(--image-dark-brightness));
     justify-content: center;
     align-items: center;
     margin-top: 50px;

@@ -53,6 +53,10 @@ p {
 .bouton:hover {
     background-color: #85be87;
 }
+input[type="submit"].bouton:hover {
+    background-color: #85be87;
+}
+
 h1 {
     font-family: 'Francois One', sans-serif;
     color: #5BA55D;
